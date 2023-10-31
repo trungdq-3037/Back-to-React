@@ -7,6 +7,8 @@ import { MINUS, ADD, RESET } from "./native-global-state/action";
 import Main from "./native-global-state/Compoments/Main";
 import ComA from "./native-global-state/Compoments/ComA";
 import ComB from "./native-global-state/Compoments/ComB";
+import DemoDebounce from "./hooks/useDebounce/DemoDebounce";
+import DemoUseArray from "./hooks/useArray/DemoUseArray";
 
 export const CounterContext = createContext(initialState);
 
@@ -60,6 +62,17 @@ function App() {
           <ComB></ComB>
         </Main>
       </CounterContext.Provider>
+
+      <div>=======================</div>
+      <div>=======================</div>
+      <div> Demo Customize Hook</div>
+      <div>=======================</div>
+      <DemoDebounce />
+      <div>=======================</div>
+      <div>=======================</div>
+        <DemoUseArray />
+
+
     </div>
   );
 }
