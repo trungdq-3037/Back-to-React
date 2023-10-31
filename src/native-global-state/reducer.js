@@ -1,6 +1,6 @@
 import { RESET, ADD, MINUS } from "./action";
 
-const initialState = { count: 0 };
+export const initialState = { count: 0 };
 
 export default function stateReducer(state, action) {
   switch (action.type) {
